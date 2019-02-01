@@ -1,0 +1,207 @@
+@import 'varsandmix';
+
+/*hebrew fix*/
+.ivrit{
+    direction: $hebrew;
+}
+.rtl {
+    text-align: $yamina;
+}
+/*navbar dropdown items css*/
+.dropbtn {
+    background-color: $navcolor;
+    padding: $navpadding;
+    font-size: $buttonfontsize;
+    border: $noborder;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $sectbgcolor;
+    min-width: $dropdownwidth;
+    box-shadow: $generalboxshade;
+    z-index: $ontop;
+}
+
+.dropdown-content a {
+    color: $droplinkcolor;
+    @include spaceandblock;
+}
+
+.dropdown-content { 
+    a:hover {
+        color: $linkhovercolor;
+    }
+}
+.dropdown:hover { 
+    .dropdown-content {
+        display: block;
+    }
+}
+.dropdown:hover {
+     .dropbtn {
+         background-color: $navhovercolor;
+    }
+}
+/*end of navbar dropdown items css*/
+/*dropdown styling*/
+.luhot{
+    font-size: $luhotfontsize;
+    color: $luhotcolor;
+}
+.nodrop{
+    color: $droplinkcolor;
+    @include spaceandblock;
+    border-radius: $sharpedges;
+}
+.nodrop:hover{
+    color: $droplinkcolor;
+    background-color: $navhovercolor;
+}
+.nodroppublish{
+    color: $publishcolor;
+    @include spaceandblock;
+    border-radius: $sharpedges;
+    background-color: $linkhovercolor;
+}
+.nodroppublish:hover{
+    @include deeporangebutton;
+}
+.ezor {
+    color: $linkhovercolor;
+}
+.ezor:hover {
+    background-color: $navhovercolor;
+    color: $generalhovercolor;
+}
+.efsha{
+    font-size: $luhotfontsize;
+    display: block;
+}
+.searchbtn{
+    display: inline;
+    @include deeporangebutton;
+    border-radius: $roundedges;
+    box-shadow: $generalboxshade;
+}
+#fixtest{
+    position: absolute;
+    top: 20px;
+    right: -8px;
+}
+/*end of dropdown styling*/
+/*beginning of jumbothingy style*/
+.bluegrad{
+    background: $jumbobggrad;
+    height: $jumboheight;
+
+}
+.parastyle{
+    font-size: $jumbotext;
+}
+.findcarstyle{
+    font-size: $jumbotext;
+    width: $buttonwidth;
+    padding: $buttonpadding;
+}
+.jumbowidth{
+    width: $jumbowidth;
+}
+/*end of jumbothingy style*/
+.slideintojumbo{
+    margin-top: $jumboslideup;
+    border: $jumborder;
+    border-radius: $rounderedges;
+}
+/*beginning of cards style*/
+.cardlink{
+    /*mixin here*/
+    @include cardbasis;
+    color: black;
+}
+.cardlink:hover{
+    @include hoveroverlinks;
+}
+.cardlinkspecial{
+    @include cardbasis;
+    color: $specialcardcolor;
+}
+.cardlinkspecial:hover{
+    @include hoveroverlinks;
+}
+.cardlinkbold{
+    @include cardbasis;
+    color: $droplinkcolor;
+    font-weight: $boldtext;
+}
+.cardlinkbold:hover{
+    @include hoveroverlinks;
+}
+
+/*bootstrap run over*/
+.card {
+    border: $cardborder;
+    box-shadow: $generalboxshade;
+    height: $cardheight;
+}
+.card-body{
+    box-shadow: $generalboxshade;
+}
+.card-img-top{
+    width: $cardimagewidth;
+    height: $cardimageheight;
+}
+.navbar-nav{
+    background-color: $sectbgcolor;
+}
+/*add-on to card class for smaller cards*/
+#littlecard{
+    height: $specialsmallcard;
+}
+/*end of bootstrap run over*/
+/*2nd cards styling*/
+.littletext {
+    font-size: $generallfontsize;
+}
+.smallertext {
+    font-size: $smalltext;
+    color: $smalltextcolor;
+}
+/*end of 2nd cards styling*/
+/*start of beforefooter */
+.emtzapic {
+    margin: $automargin;    
+    display: block;
+    border-radius: $specialborder;
+}
+.fulllink {
+    text-decoration: $nounderline;
+    color: $droplinkcolor;
+}
+.fulllink:hover{
+    @include hoveroverlinks;
+}
+.makeitcenter{
+    text-align: center;
+}
+.picsizer{
+    height: $smallpicsquare;
+    width: $smallpicsquare;
+    display: inline-block;
+}
+/*for last part of footer*/
+.footlink{
+    @include cardbasis;
+    color: $droplinkcolor;
+    font-size: $smalltext;
+}
+.footlink:hover {
+    @include hoveroverlinks;
+    font-size: $smalltext;
+}

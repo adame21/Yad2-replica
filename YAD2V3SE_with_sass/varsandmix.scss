@@ -1,0 +1,83 @@
+/*general vars*/
+$hebrew: rtl;
+$yamina: right;
+$linkpadding: 12px 16px;
+$nounderline: none;
+$sharpedges: 0;
+$roundedges: 2px;
+$rounderedges: 6px;
+$sectbgcolor:  #f1f1f1;
+$droplinkcolor: black;
+$generalhovercolor: rgb(211, 110, 9);
+$generalboxshade: 0px 3px 5px 5px rgba(0,0,0,0.2);
+$generallfontsize: 16px;
+$boldtext: bold;
+
+/*general mixins*/
+@mixin hoveroverlinks {
+    color: rgb(211, 110, 9);
+    text-decoration: none;
+}
+
+/*nav vars*/
+$navcolor: #F8F9FA;
+$navpadding: 16px;
+$noborder: none;
+$dropdownwidth: 160px;
+$ontop: 1;
+$buttonfontsize: 16px;
+$linkhovercolor: #FD8409;
+$luhotfontsize: 20px;
+$luhotcolor: rgb(170, 170, 170);
+$nodropcolor: black;
+$navhovercolor: #E5E5E5;
+$publishcolor:white;
+$publishhover: rgb(211, 110, 9);
+
+/*nav mixins*/
+@mixin deeporangebutton{
+    color: white;
+    background-color: rgb(211, 110, 9);
+}
+@mixin spaceandblock{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*jumbo vars*/
+$jumbobggrad: linear-gradient(to left, #000099 0%, #3399ff 60%, #1b6ab9 80%, #000099 100%);
+$jumboheight: 500px;
+$jumbotext: 20px;
+$jumbowidth: 95%;
+$buttonwidth: 35%;
+$buttonpadding: 5px;
+$jumboslideup: -80px;
+$jumborder: 8px solid white;
+
+/*cards vars*/
+$specialcardcolor: rgb(69, 168, 230);
+$specialsmallcard: 385px;
+$smalltext: 14px;
+$smalltextcolor: rgb(95, 95, 95);
+
+/*cards mixins*/
+@mixin cardbasis{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 0;
+    background-color: #f1f1f1;
+}
+
+/*beforefooter vars*/
+$automargin: auto;
+$specialborder: 4px;
+$smallpicsquare: 34px;
+
+
+/*bootstrap runover vars*/
+$cardborder: 1px solid lightslategray;
+$cardheight: 530px;
+$cardimageheight: 200px;
+$cardimagewidth: 100%;

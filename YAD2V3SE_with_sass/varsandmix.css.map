@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,gBAAgB;AAehB,kBAAkB;AAMlB,YAAY;AAeZ,cAAc;AAWd,cAAc;AAUd,cAAc;AAMd,gBAAgB;AAShB,qBAAqB;AAMrB,0BAA0B",
+    "sources": [
+        "varsandmix.scss"
+    ],
+    "names": [],
+    "file": "varsandmix.css"
+}
